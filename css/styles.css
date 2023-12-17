@@ -1,0 +1,242 @@
+/*
+###############################
+RESET
+###############################
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  min-height: 100vh;
+  background-color: rgb(38, 6, 11);
+}
+
+/*
+###############################
+END -- RESET
+###############################
+*/
+/*
+#####################################################
+FOOTER STYLES
+#####################################################
+*/
+#footer {
+  color: rgb(38, 6, 11);
+  padding: 10px;
+}
+#footer .footerTextContent {
+  text-align: center;
+  align-content: center;
+}
+#footer .footerTextContent a {
+  text-decoration: none;
+  font-style: none;
+}
+
+/*
+#####################################################
+END --  FOOTER STYLES
+#####################################################
+*/
+/*
+###############################
+RESET
+###############################
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main {
+  min-height: 100vh;
+  background-color: rgb(38, 6, 11);
+}
+
+/*
+###############################
+END -- RESET
+###############################
+*/
+/*
+#####################################################
+HEADER STYLES
+#####################################################
+*/
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: auto;
+  background-color: rgb(38, 6, 11);
+  backdrop-filter: blur(10px);
+}
+#header .header-headerLogo {
+  width: 293px;
+  height: 122px;
+}
+#header #navbarNav {
+  display: flex;
+  align-items: right;
+}
+#header .navbar-nav a {
+  color: rgb(217, 188, 134);
+}
+
+/*
+#####################################################
+END --  HEADER STYLES
+#####################################################
+*/
+@media (min-width: 1960px) {
+  #main .carousel {
+    display: flex;
+    width: 1960px;
+    margin: 0 auto;
+    min-height: none;
+  }
+  #main .main--botNewsframe {
+    width: 1960px;
+    height: 50vh;
+  }
+  #main .main--top {
+    background-color: rgb(217, 188, 134);
+  }
+  #mainFilosofia .mainFilosofia--Top {
+    background-color: rgb(217, 188, 134);
+  }
+  #mainFilosofia .mainFilosofia--Top .mainFilosofia--TopImg {
+    width: 1960px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 980px) {
+  #header {
+    position: relative;
+    text-size-adjust: 10px;
+    width: 100vw;
+  }
+  .main--botNewsframe {
+    width: 70vw;
+    height: auto;
+  }
+  #footer {
+    font-size: 10px;
+  }
+  .mainFilosofia--Bot h1 {
+    font-size: 12px;
+  }
+  .mainFilosofia--Bot p {
+    font-size: 10px;
+  }
+}
+/*
+#####################################################
+MAIN STYLES
+#####################################################
+*/
+.main-botBtn {
+  display: flex;
+  padding: 15px;
+  font-size: 18px;
+  font-style: Roboto;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 20px;
+  border-color: rgb(38, 6, 11);
+}
+
+.main-botNewsframe {
+  display: flex;
+  width: 800px;
+  height: 800px;
+  padding: 50px;
+  background-color: rgb(38, 6, 11);
+  border-radius: 20px;
+  margin: 15px auto;
+}
+
+.main-topImage {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+#####################################################
+END -- MAIN STYLES
+#####################################################
+  */
+#mainFilosofia {
+  font-size: 50px;
+}
+#mainFilosofia .mainFilosofia--TopImg img {
+  width: 100%;
+}
+#mainFilosofia .mainFilosofia--TopText {
+  background-color: gray;
+  text-align: right;
+  color: white;
+}
+#mainFilosofia .mainFilosofia--Bot {
+  height: auto;
+  background-color: rgb(38, 6, 11);
+  color: rgb(217, 188, 134);
+  padding: 40px;
+}
+#mainFilosofia .mainFilosofia--Bot h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#mainFilosofia .mainFilosofia--Bot p {
+  font-size: 15px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+#mainFilosofia .mainFilosofia--Bot .vision {
+  margin-top: 30px;
+}
+
+/*
+#####################################################
+MAIN STYLES
+#####################################################
+*/
+.main--botBtn {
+  display: flex;
+  padding: 15px;
+  font-size: 18px;
+  font-style: Roboto;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 20px;
+  border-color: rgb(38, 6, 11);
+}
+
+.main--botNewsframe {
+  display: flex;
+  width: 800px;
+  height: 800px;
+  padding: 50px;
+  background-color: rgb(38, 6, 11);
+  border-radius: 20px;
+  margin: 15px auto;
+}
+
+.main--topImage {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+#####################################################
+END -- MAIN STYLES
+#####################################################
+*/
+
+/*# sourceMappingURL=styles.css.map */

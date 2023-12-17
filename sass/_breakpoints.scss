@@ -1,0 +1,51 @@
+@media (min-width:1960px) {
+    #main{
+        .carousel{
+            display: flex;
+            width: 1960px;
+            margin: 0 auto;
+            min-height: none;
+                }
+        .main--botNewsframe{
+            width: 1960px;
+            height: 50vh;
+                }
+        .main--top{
+            background-color: rgba(217, 188, 134, 1);
+                }
+    }
+
+    #mainFilosofia{
+        .mainFilosofia--Top{
+            background-color: rgba(217, 188, 134, 1);
+            .mainFilosofia--TopImg{
+                width: 1960px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media (max-width:980px){
+    #header{
+        position: relative;
+        text-size-adjust: 10px;
+        width: 100vw;
+    }
+    .main--botNewsframe{
+        width: 70vw;
+        height: auto;
+    }
+    #footer{
+        font-size: 10px;
+    }
+    
+    .mainFilosofia--Bot{
+        h1{
+            font-size: 12px;
+        }
+        p{
+            font-size: 10px;
+        }
+    }
+}

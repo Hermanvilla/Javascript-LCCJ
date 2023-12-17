@@ -1,0 +1,35 @@
+/*
+#####################################################
+HEADER STYLES
+#####################################################
+*/
+
+
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: auto;
+    background-color: rgb(38, 6, 11);
+    backdrop-filter: blur(10px);
+    .header-headerLogo {
+        width: 293px;
+        height: 122px;
+    }
+    #navbarNav{
+        display: flex;
+        align-items: right;
+    }
+    .navbar-nav a{
+        color: rgba(217, 188, 134, 1);
+    }
+    
+}
+
+
+/*
+#####################################################
+END --  HEADER STYLES
+#####################################################
+*/

@@ -1,0 +1,31 @@
+#mainFilosofia{
+    font-size: 50px;
+    .mainFilosofia--TopImg{
+        img{
+            width: 100%;
+            }
+    }
+    .mainFilosofia--TopText{
+        background-color: gray;
+        text-align: right;
+        color: white;
+    }
+    .mainFilosofia--Bot{
+        height: auto;
+        background-color: rgb(38, 6, 11);
+        color: rgba(217, 188, 134, 1);
+        padding: 40px;
+        h1{
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 15px;
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+        .vision{
+            margin-top: 30px;
+        }
+    }
+}

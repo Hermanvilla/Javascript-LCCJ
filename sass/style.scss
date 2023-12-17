@@ -1,0 +1,59 @@
+
+@import"reset.scss";
+@import"footer";
+@import"reset";
+@import"header";
+@import"breakpoints";
+@import"index-main.scss";
+@import"filosofia-main.scss";
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#####################################################
+MAIN STYLES
+#####################################################
+*/
+
+.main--botBtn{
+    display: flex;
+    padding: 15px;
+    font-size: 18px;
+    font-style: Roboto;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    border-color: rgba(38, 6, 11, 1);
+}
+
+.main--botNewsframe{
+    display: flex;
+    width: 800px;
+    height: 800px;
+    padding: 50px;
+    background-color: rgba(38, 6, 11, 1);
+    border-radius: 20px;
+    margin: 15px auto;   
+}
+
+.main--topImage{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+#####################################################
+END -- MAIN STYLES
+#####################################################
+*/
+
