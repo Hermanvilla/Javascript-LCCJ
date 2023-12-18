@@ -121,18 +121,29 @@ END --  HEADER STYLES
     position: relative;
     text-size-adjust: 10px;
     width: 100vw;
+    font-size: 10px;
   }
-  .main--botNewsframe {
-    width: 70vw;
+  #header img {
+    width: 100%;
     height: auto;
   }
   #footer {
     font-size: 10px;
   }
-  .mainFilosofia--Bot h1 {
+  #footer text-md-start {
+    font-size: 10px;
+  }
+  #main .main--botNewsframe {
+    width: 70vw;
+    height: auto;
+  }
+  #mainFilosofia .mainFilosofia--Bot h1 {
     font-size: 12px;
   }
-  .mainFilosofia--Bot p {
+  #mainFilosofia .mainFilosofia--Bot p {
+    font-size: 10px;
+  }
+  #mainAbogados section div h1 {
     font-size: 10px;
   }
 }
@@ -200,6 +211,39 @@ END -- MAIN STYLES
 }
 #mainFilosofia .mainFilosofia--Bot .vision {
   margin-top: 30px;
+}
+
+#mainAbogados {
+  border-bottom: 10px;
+  border-color: rgb(38, 6, 11);
+}
+#mainAbogados .mainAbogados--Top img {
+  width: 100%;
+  height: auto;
+}
+#mainAbogados .mainAbogados--Bot {
+  padding: 50px;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: auto;
+}
+#mainAbogados .mainAbogados--Bot div {
+  z-index: 1;
+  justify-content: center;
+}
+#mainAbogados .mainAbogados--Bot div img {
+  z-index: 100;
+  justify-content: center;
+  width: 70%;
+  height: auto;
+  border-radius: 90px;
+}
+#mainAbogados .mainAbogados--Bot div h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 40px;
+  text-align: center;
 }
 
 /*

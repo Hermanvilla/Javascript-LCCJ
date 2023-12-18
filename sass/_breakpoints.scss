@@ -28,24 +28,48 @@
 
 @media (max-width:980px){
     #header{
+        img{
+            width: 100%;
+            height: auto;
+        }
         position: relative;
         text-size-adjust: 10px;
         width: 100vw;
-    }
-    .main--botNewsframe{
-        width: 70vw;
-        height: auto;
-    }
-    #footer{
         font-size: 10px;
     }
-    
-    .mainFilosofia--Bot{
-        h1{
-            font-size: 12px;
-        }
-        p{
+    #footer{
+        text-md-start {
             font-size: 10px;
         }
+        font-size: 10px;
     }
-}
+
+    #main{
+        .main--botNewsframe{
+            width: 70vw;
+            height: auto;
+        }
+    }
+    
+    #mainFilosofia{
+        .mainFilosofia--Bot{
+            h1{
+                font-size: 12px;
+            }
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+    
+
+    #mainAbogados{
+        section{
+            div{
+                h1{
+                font-size: 10px;
+                }
+                } 
+            }
+        }   
+    }

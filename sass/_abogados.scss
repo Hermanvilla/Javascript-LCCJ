@@ -1,0 +1,39 @@
+#mainAbogados{
+    border-bottom: 10px;
+    border-color:  rgb(38, 6, 11);
+    .mainAbogados--Top{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .mainAbogados--Bot{
+        padding: 50px;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: auto;
+
+    div{
+        z-index: 1;
+        justify-content: center;
+            img{
+            z-index: 100;
+            justify-content: center;
+            width: 70%;
+            height: auto;
+            border-radius: 90px;
+            }
+            h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 40px;
+            text-align: center;
+            }   
+        }
+    }    
+}
+
+
+
