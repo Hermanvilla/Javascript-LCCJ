@@ -9,7 +9,6 @@
     }
 
     .mainAbogados--Bot{
-        padding: 50px;
         height: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -17,14 +16,11 @@
         height: auto;
 
     div{
-        z-index: 1;
-        justify-content: center;
             img{
             z-index: 100;
             justify-content: center;
             width: 70%;
             height: auto;
-            border-radius: 90px;
             }
             h1{
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -32,8 +28,10 @@
             text-align: center;
             }   
         }
-    }    
+    }
 }
+
+
 
 
 
