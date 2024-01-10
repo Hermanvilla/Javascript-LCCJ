@@ -1,0 +1,90 @@
+#mainContacto{
+    .mainContacto-top{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: auto;
+        gap: 10px;
+        padding-bottom: 70px;
+        .form{
+            align-content: end;
+            .contact-form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                max-width: 400px;
+                margin: 50px auto;
+            }
+            .contact-form input[type="text"],
+            .contact-form input[type="email"],
+            .contact-form input[type="tel"],
+            .contact-form textarea {
+                width: 100%;
+                padding: 10px;
+                margin: 5px 0;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+            .contact-form input[type="submit"] {
+                width: 100%;
+                padding: 10px;
+                margin: 5px 0;
+                background-color: #d9bc86;
+                color: white;
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+            .contact-form input[type="submit"]:hover {
+                background-color: #45a049;
+            }
+        }
+        .formImg{
+            background-image: url("../image/Sillas+logo.png");
+            width: 100%;
+            height: auto;
+            background-attachment: fixed;
+            background-position: center;
+            background-size:auto;
+        
+        }
+    }
+    .mainContacto-bot{
+        position: relative;
+        height: 100vh;
+        padding-bottom: 40%;
+        font-family: Arial, sans-serif;
+        background: #200122;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #26060b, #d9bc86);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #26060b, #d9bc86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        .location-section {
+            margin: 0 auto;
+            position: relative;
+            width: 60%;
+            height: auto;
+            padding-bottom: 66.25%; /* 16:9 Aspect Ratio */
+    
+        }
+        .location-section iframe {
+            position: absolute;
+            top: 200px;
+            left: 0;
+            width: 100%;
+            height: 70vh;
+            border: none;
+            
+        }
+        .wave1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            }
+        .wave2{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+                    }
+    }
+    
+}

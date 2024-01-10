@@ -1,0 +1,64 @@
+#mainAreas{
+    .mainAreas-texto{
+    width: 100%;
+    height: 100vh;
+    background: url("../image/diosa+logo.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding-top: calc(50vh);
+        .mainAreas-textoH2{
+            background-color: black;
+            color: white;
+            width: 700px;
+            height: 200px;
+            margin: auto;
+            text-align: center;
+            line-height: 200px;
+                        }
+    }
+    
+    .mainAreas-Areas{
+        background-color: white;
+        height: auto;
+        margin-top: 50px;
+        h2{
+            text-align: center;
+        }
+        p{
+            padding: 60px 40px;
+            text-align: center;
+        }
+    }
+    .mainAreas-texto2{
+        width: 100%;
+        height: 100vh;
+        background: url("../image/diosa+logo.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        padding-top: calc(50vh);
+        .mainAreas-ul{
+            background-color: white;
+        }
+    }
+    .mainAreas-collapse{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .btn {
+            border-bottom: 1px;
+            border-style:dashed;
+            border-color: #d9bc86;
+            font-style:oblique;
+            font-size: 20px;
+            color: black;
+            width: 100%;
+            margin: auto;   
+        }
+        .card{
+            color: gray;
+            text-align: center;
+        }
+    }
+}
+

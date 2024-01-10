@@ -160,6 +160,46 @@ END --  HEADER STYLES
     text-align: center;
   }
 }
+@media (max-width: 480px) {
+  #header {
+    position: relative;
+    text-size-adjust: 10px;
+    width: 100%;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  #header img {
+    width: 100%;
+    height: auto;
+  }
+  /** MEDIA FILOSOFIA **/
+  #mainFilosofia .mainFilosofia--Bot .misionyvision {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  /** MEDIA AREAS PRACTICAS **/
+  #mainAreas .mainAreas-texto {
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  #mainAreas .mainAreas-texto .mainAreas-textoH2 {
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 100px;
+  }
+  /** MEDIA CONTACTO **/
+  #mainContacto .mainContacto-top {
+    margin-top: 0;
+    grid-template-rows: 50% 50%;
+  }
+}
 /*
 #####################################################
 MAIN STYLES
@@ -445,11 +485,9 @@ END -- MAIN STYLES
 }
 
 #mainContacto .mainContacto-top {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  height: auto;
-  gap: 10px;
-  padding-bottom: 70px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
 }
 #mainContacto .mainContacto-top .form {
   align-content: end;
@@ -486,7 +524,7 @@ END -- MAIN STYLES
 }
 #mainContacto .mainContacto-top .formImg {
   background-image: url("../image/Sillas+logo.png");
-  width: 100%;
+  width: 100vh;
   height: auto;
   background-attachment: fixed;
   background-position: center;
@@ -494,19 +532,18 @@ END -- MAIN STYLES
 }
 #mainContacto .mainContacto-bot {
   position: relative;
-  height: 100vh;
-  padding-bottom: 40%;
+  height: auto;
   font-family: Arial, sans-serif;
   background: #200122; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #26060b, #d9bc86); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #26060b, #d9bc86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #mainContacto .mainContacto-bot .location-section {
-  margin: 0 auto;
+  margin: auto;
   position: relative;
   width: 60%;
   height: auto;
-  padding-bottom: 66.25%; /* 16:9 Aspect Ratio */
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
 }
 #mainContacto .mainContacto-bot .location-section iframe {
   position: absolute;
@@ -529,4 +566,4 @@ END -- MAIN STYLES
   width: 100%;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=syles.css.map */

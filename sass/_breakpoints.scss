@@ -26,7 +26,7 @@
     }
 }
 
-@media (max-width:980px){
+@media (min-width:481px) and (max-width:980px){
     #header{
         img{
             width: 100%;
@@ -45,8 +45,8 @@
     }
 
     #main{
-        .main--botNewsframe{
-            width: 70vw;
+        .main--noticias{
+            width: 100%;
             height: auto;
         }
     }
@@ -71,5 +71,19 @@
                 }
                 } 
             }
-        }   
+        }  
+        
+    #mainFilosofia{
+        h1{
+            font-size: 20px ;
+        }
+        h2{
+            font-size: 15px;
+        }
+        p{
+            font-size: 10px;
+            text-align: center;
+        }
+                }
     }
+

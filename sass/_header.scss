@@ -4,6 +4,10 @@ HEADER STYLES
 #####################################################
 */
 
+/*
+background-color: #26060b;
+color: #d9bc86;
+*/
 
 #header {
     position: sticky;
@@ -11,18 +15,22 @@ HEADER STYLES
     z-index: 100;
     width: 100%;
     height: auto;
-    background-color: rgb(38, 6, 11);
+    background-color: #ffffff;
     backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 20px #000000b9;
     .header-headerLogo {
-        width: 293px;
-        height: 122px;
+        margin-left: 50px;
+        width: 100px;
+        height: auto;
     }
     #navbarNav{
+        margin-right: 50px;
         display: flex;
         align-items: right;
+        font-size: 18px;
     }
     .navbar-nav a{
-        color: rgba(217, 188, 134, 1);
+        color: #26060b;
     }
     
 }

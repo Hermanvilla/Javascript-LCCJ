@@ -1,31 +1,64 @@
 #mainFilosofia{
-    font-size: 50px;
-    .mainFilosofia--TopImg{
-        img{
-            width: 100%;
-            }
-    }
-    .mainFilosofia--TopText{
-        background-color: gray;
-        text-align: right;
-        color: white;
+    .mainFilosofia--Top{
+        .mainFilosofia--TopImg{
+            img{
+                width: 100%;
+                }
+        }
+        .mainFilosofia--TopText{
+                background-color: white;
+                width: 100%;
+                height: auto    ;
+                font-family: 'Quicksand', sans-serif;
+                font-family: 'Roboto', sans-serif;
+                justify-content: center;
+                margin-left: 50px;
+                margin-top: 50px;
+                color: rgba(217, 188, 134, 1) ;
+                
+        }
     }
     .mainFilosofia--Bot{
+        position: relative;
         height: auto;
         background-color: rgb(38, 6, 11);
         color: rgba(217, 188, 134, 1);
         padding: 40px;
-        h1{
-            font-size: 20px;
-            margin-bottom: 20px;
+        .wave1Filosofia1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
         }
-        p{
-            font-size: 15px;
-            text-align: justify;
-            margin-bottom: 10px;
+        .waveFilosofia2{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+                }
+        .misionyvision{
+            margin-top: 100px;
+            .title1{
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+            .content1{
+                padding: 40px;
+                font-size: 20px;
+                text-align: justify;
+                margin-bottom: 10px;
+            }
+            .title2{
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+            .content2{
+                padding: 50px;
+                font-size: 20px;
+                text-align: justify;
+                margin-bottom: 100px;
+            }
         }
-        .vision{
-            margin-top: 30px;
-        }
+
     }
 }
