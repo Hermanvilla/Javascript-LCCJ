@@ -119,7 +119,7 @@ END --  HEADER STYLES
     margin: 0 auto;
   }
 }
-@media (min-width: 481px) and (max-width: 980px) {
+@media (min-width: 481px) and (max-width: 1200px) {
   #header {
     position: relative;
     text-size-adjust: 10px;
