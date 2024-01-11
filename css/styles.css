@@ -140,24 +140,32 @@ END --  HEADER STYLES
     width: 100%;
     height: auto;
   }
-  #mainFilosofia .mainFilosofia--Bot h1 {
-    font-size: 12px;
-  }
-  #mainFilosofia .mainFilosofia--Bot p {
-    font-size: 10px;
-  }
-  #mainAbogados section div h1 {
-    font-size: 10px;
-  }
-  #mainFilosofia h1 {
-    font-size: 20px;
-  }
-  #mainFilosofia h2 {
-    font-size: 15px;
-  }
-  #mainFilosofia p {
+  #mainFilosofia .mainFilosofia--Bot .misionyvision .content2 {
     font-size: 10px;
     text-align: center;
+  }
+}
+@media (min-width: 481px) and (max-width: 1200px) and (max-width: 480px) {
+  #header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+  #header .header-headerLogo {
+    width: 50px;
+    height: auto;
+  }
+  #header #navbarNav {
+    display: flex;
+    align-items: right;
+    font-size: 10px;
+  }
+  #header .navbar-nav a {
+    color: #26060b;
+  }
+  #header .nav-item {
+    font-size: 8px;
   }
 }
 /*
@@ -383,6 +391,9 @@ END -- MAIN STYLES
     transform-origin: top left;
   }
 }
+#mainAreas {
+  width: 100%;
+}
 #mainAreas .mainAreas-texto {
   width: 100%;
   height: 100vh;
@@ -395,11 +406,11 @@ END -- MAIN STYLES
 #mainAreas .mainAreas-texto .mainAreas-textoH2 {
   background-color: black;
   color: white;
-  width: 700px;
-  height: 200px;
+  width: fit-content;
+  padding: 20px;
+  height: auto;
   margin: auto;
   text-align: center;
-  line-height: 200px;
 }
 #mainAreas .mainAreas-Areas {
   background-color: white;
