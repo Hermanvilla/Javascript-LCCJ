@@ -64,7 +64,7 @@
     }
     
 
-@media (max-width:480px) {
+@media screen and (max-width:480px) {
     #header {
         position: fixed;
         top: 0;
@@ -87,6 +87,26 @@
             }
             
         }
+    #mainContacto{
+        .mainContacto-top {
+            flex-direction: column;
+        }
+        .form{
+            .formImg {
+                width: 100%;
+            }    
+        }
+        
+        /* Estilos adicionales para adaptar el formulario en pantallas pequeñas */
+        .contact-form {
+            max-width: 100%;
+            padding: 20px;
+        }
+    
+        .formImg {
+            height: 200px; /* Ajusta la altura según tus necesidades */
+        }
+    }
     }
 
 }

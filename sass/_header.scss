@@ -32,7 +32,16 @@ color: #d9bc86;
     .navbar-nav a{
         color: #26060b;
     }
-    
+    /* Agrega un subrayado a la página actual en la lista de navegación */
+.navbar-nav .nav-item.active {
+    border-bottom: 2px solid #d9bc86 ; 
+}
+
+/* Cambia el color del texto para la página actual si lo deseas */
+.navbar-nav .nav-item.active a {
+    color: #26060b; /* Cambia el color según tus preferencias */
+}
+
 }
 
 

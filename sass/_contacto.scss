@@ -1,12 +1,13 @@
 #mainContacto{
     .mainContacto-top{
-        display: grid;
-        grid-template-columns: 50% 50%;
+        display: flex;
+        justify-content: space-between;
         height: auto;
         gap: 10px;
         padding-bottom: 70px;
         .form{
             align-content: end;
+            flex: 1;
             .contact-form {
                 display: flex;
                 flex-direction: column;
@@ -45,6 +46,7 @@
             background-attachment: fixed;
             background-position: center;
             background-size:auto;
+            flex: 1;
         
         }
     }
@@ -62,11 +64,19 @@
             width: 60%;
             height: auto;
             padding-bottom: 66.25%; /* 16:9 Aspect Ratio */
+            .tituloUbicaion{
+                color: #d9bc86;
+                font-family: 'Quicksand', sans-serif;
+                font-family: 'Roboto', sans-serif;
+                align-content: center;
+                text-align: center;
+                padding-top: 70px;
+            }
     
         }
         .location-section iframe {
             position: absolute;
-            top: 200px;
+            top: 150px;
             left: 0;
             width: 100%;
             height: 70vh;
@@ -78,12 +88,14 @@
             top: 0;
             left: 0;
             width: 100%;
+            max-height: 100px;
             }
         .wave2{
             position: absolute;
             bottom: 0;
             left: 0;
             width: 100%;
+            max-height: 100px;
                     }
     }
     

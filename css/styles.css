@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 ###############################
 RESET
@@ -76,6 +77,8 @@ color: #d9bc86;
   background-color: #ffffff;
   backdrop-filter: blur(10px);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7254901961);
+  /* Agrega un subrayado a la página actual en la lista de navegación */
+  /* Cambia el color del texto para la página actual si lo deseas */
 }
 #header .header-headerLogo {
   margin-left: 50px;
@@ -90,6 +93,12 @@ color: #d9bc86;
 }
 #header .navbar-nav a {
   color: #26060b;
+}
+#header .navbar-nav .nav-item.active {
+  border-bottom: 2px solid #d9bc86;
+}
+#header .navbar-nav .nav-item.active a {
+  color: #26060b; /* Cambia el color según tus preferencias */
 }
 
 /*
@@ -145,7 +154,7 @@ END --  HEADER STYLES
     text-align: center;
   }
 }
-@media (min-width: 481px) and (max-width: 1200px) and (max-width: 480px) {
+@media screen and (min-width: 481px) and (max-width: 1200px) and (max-width: 480px) {
   #header {
     position: fixed;
     top: 0;
@@ -166,6 +175,22 @@ END --  HEADER STYLES
   }
   #header .nav-item {
     font-size: 8px;
+  }
+  #mainContacto {
+    /* Estilos adicionales para adaptar el formulario en pantallas pequeñas */
+  }
+  #mainContacto .mainContacto-top {
+    flex-direction: column;
+  }
+  #mainContacto .form .formImg {
+    width: 100%;
+  }
+  #mainContacto .contact-form {
+    max-width: 100%;
+    padding: 20px;
+  }
+  #mainContacto .formImg {
+    height: 200px; /* Ajusta la altura según tus necesidades */
   }
 }
 /*
@@ -456,14 +481,15 @@ END -- MAIN STYLES
 }
 
 #mainContacto .mainContacto-top {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  justify-content: space-between;
   height: auto;
   gap: 10px;
   padding-bottom: 70px;
 }
 #mainContacto .mainContacto-top .form {
   align-content: end;
+  flex: 1;
 }
 #mainContacto .mainContacto-top .form .contact-form {
   display: flex;
@@ -502,6 +528,7 @@ END -- MAIN STYLES
   background-attachment: fixed;
   background-position: center;
   background-size: auto;
+  flex: 1;
 }
 #mainContacto .mainContacto-bot {
   position: relative;
@@ -519,9 +546,17 @@ END -- MAIN STYLES
   height: auto;
   padding-bottom: 66.25%; /* 16:9 Aspect Ratio */
 }
+#mainContacto .mainContacto-bot .location-section .tituloUbicaion {
+  color: #d9bc86;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto", sans-serif;
+  align-content: center;
+  text-align: center;
+  padding-top: 70px;
+}
 #mainContacto .mainContacto-bot .location-section iframe {
   position: absolute;
-  top: 200px;
+  top: 150px;
   left: 0;
   width: 100%;
   height: 70vh;
@@ -532,12 +567,14 @@ END -- MAIN STYLES
   top: 0;
   left: 0;
   width: 100%;
+  max-height: 100px;
 }
 #mainContacto .mainContacto-bot .wave2 {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
+  max-height: 100px;
 }
 
 /*# sourceMappingURL=styles.css.map */
