@@ -8,28 +8,30 @@
     background-position: center;
     background-size: cover;
     padding-top: 50vh;
-        .mainAreas-textoH2{
-            background-color: black;
-            color: white;
-            width: fit-content;
-            padding: 20px;
-            height: auto;
-            margin: auto;
-            text-align: center;
-                        }
     }
     
     .mainAreas-Areas{
         background-color: white;
         height: auto;
         margin-top: 50px;
-        h2{
+        color: gray;
+        h3{
+            color: gray;
+            padding-top: 50px;
             text-align: center;
         }
         p{
             padding: 60px 40px;
             text-align: center;
         }
+        .mainAreas-textoH2{
+            color: gray;
+            width: fit-content;
+            padding: 20px;
+            height: auto;
+            margin: auto;
+            text-align: center;
+                        }
     }
     .mainAreas-texto2{
         width: 100%;

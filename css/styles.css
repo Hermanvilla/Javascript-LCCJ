@@ -82,7 +82,7 @@ color: #d9bc86;
 }
 #header .header-headerLogo {
   margin-left: 50px;
-  width: 100px;
+  width: 300px;
   height: auto;
 }
 #header #navbarNav {
@@ -295,7 +295,7 @@ END -- MAIN STYLES
   margin-bottom: 20px;
 }
 #mainFilosofia .mainFilosofia--Bot .misionyvision .content1 {
-  padding: 40px;
+  padding: 40px 0;
   font-size: 20px;
   text-align: justify;
   margin-bottom: 10px;
@@ -305,7 +305,7 @@ END -- MAIN STYLES
   margin-bottom: 20px;
 }
 #mainFilosofia .mainFilosofia--Bot .misionyvision .content2 {
-  padding: 50px;
+  padding: 50px 0;
   font-size: 20px;
   text-align: justify;
   margin-bottom: 100px;
@@ -428,25 +428,27 @@ END -- MAIN STYLES
   background-size: cover;
   padding-top: 50vh;
 }
-#mainAreas .mainAreas-texto .mainAreas-textoH2 {
-  background-color: black;
-  color: white;
-  width: fit-content;
-  padding: 20px;
-  height: auto;
-  margin: auto;
-  text-align: center;
-}
 #mainAreas .mainAreas-Areas {
   background-color: white;
   height: auto;
   margin-top: 50px;
+  color: gray;
 }
-#mainAreas .mainAreas-Areas h2 {
+#mainAreas .mainAreas-Areas h3 {
+  color: gray;
+  padding-top: 50px;
   text-align: center;
 }
 #mainAreas .mainAreas-Areas p {
   padding: 60px 40px;
+  text-align: center;
+}
+#mainAreas .mainAreas-Areas .mainAreas-textoH2 {
+  color: gray;
+  width: fit-content;
+  padding: 20px;
+  height: auto;
+  margin: auto;
   text-align: center;
 }
 #mainAreas .mainAreas-texto2 {
