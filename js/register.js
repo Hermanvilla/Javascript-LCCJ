@@ -7,6 +7,13 @@ const formRegister = document.querySelector("#formReg"),
 
 let usuarios = JSON.parse(localStorage.getItem ("usuarios")) || [];
 
+// Contruyendo usuario de prueba
+
+const usuarioPrueba = new Usuario("Usuario Prueba", "prueba@example.com", "contraseña");
+usuarios.push(usuarioPrueba);
+guardarEnLS(usuarios);
+
+
 //Construir usuario
 
 class Usuario {
