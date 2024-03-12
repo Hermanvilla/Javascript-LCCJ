@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="description" content="Consultoria Juridica Ofrece"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://alejandrolunadev.github.io/mistycgathering/index.html"/>
+    <meta property="og:title" content="LC Consultoría Jurídica" />
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="Consultoría legal, Servicios legales, Abogados, Asesoría jurídica">
+    <meta http-equiv="Content-Language" content="es">
+    <meta name="author" content="Herman Villalobos">
+    <meta name="description" content="Asesoria legal y juridica">
+    <title>contacto</title>   
+    <link rel="shortcut icon" href="/image/Logo fondo solido vino.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+
+<main>
+	<div class="container" id="container">
+		<div  class="form-container sign-up-container">
+			<form id="formReg" action="#">
+				<h1>Registrate</h1>
+				<div class="social-container">
+					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+					<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+				<span>o registrate con tu correo</span>
+				<input id="nombre" type="text" placeholder="Nombre" />
+				<input id="email" type="email" placeholder="Email" />
+				<input id="passReg" type="password" placeholder="Contraseña" />
+				<!--<input type="submit" value="Registrate" id="registrate"> -->
+				<p id="mensaje"></p>
+				<button id="registrate" type="submit">Registrarse</button>
+				
+			</form>
+		</div>
+		<div class="form-container sign-in-container">
+			<form id="login">
+				<h1>Ingresa</h1>
+				<div  class="social-container">
+					<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+					<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+					<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+				<span>o ingresa con tu cuenta</span>
+				<input id="user" type="text" placeholder="Email" />
+				<input id="password" type="password" placeholder="Contraseña" />
+				<span><a href="#">Olvidaste tu contraseña?</a></span>
+				<button type="submit">Iniciar sesion</button>
+				<p id="mensajeLog"></p>
+			</form>
+		</div>
+		<div class="overlay-container">
+			<div class="overlay">
+				<div class="overlay-panel overlay-left">
+					<h1>Hola de nuevo!</h1>
+					<p>Para mantenerte conectado por favor, ingresa con tus datos personales.</p>
+					<button class="ghost" id="signIn">Ingresa</button>
+				</div>
+				<div class="overlay-panel overlay-right">
+					<h1>Bienvenido!</h1>
+					<p>Ingresa tu informacion personal para empezar tu asesoria</p>
+					<button class="ghost" id="signUp">Registrate</button>
+					<p id="mensaje"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+<script src="../Js/register.js"></script>
+<script src="../js/main.js"></script>
+<script src="../Js/login.js"></script>
+</body>

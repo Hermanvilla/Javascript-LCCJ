@@ -5,6 +5,7 @@ RESET
 ###############################
 */
 @import "hover.css";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
 * {
   margin: 0;
   padding: 0;
@@ -71,7 +72,7 @@ color: #d9bc86;
 #header {
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 300;
   width: 100%;
   height: auto;
   background-color: #ffffff;
@@ -82,7 +83,7 @@ color: #d9bc86;
 }
 #header .header-headerLogo {
   margin-left: 50px;
-  width: 300px;
+  width: 200px;
   height: auto;
 }
 #header #navbarNav {
@@ -482,55 +483,20 @@ END -- MAIN STYLES
   text-align: center;
 }
 
+#mainContacto {
+  background: #200122; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #26060b, #d9bc86); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #26060b, #d9bc86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 #mainContacto .mainContacto-top {
   display: flex;
-  justify-content: space-between;
-  height: auto;
-  gap: 10px;
-  padding-bottom: 70px;
-}
-#mainContacto .mainContacto-top .form {
-  align-content: end;
-  flex: 1;
-}
-#mainContacto .mainContacto-top .form .contact-form {
-  display: flex;
   flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 10px;
+  font-family: "Montserrat", sans-serif;
   align-items: center;
-  max-width: 400px;
-  margin: 50px auto;
-}
-#mainContacto .mainContacto-top .form .contact-form input[type=text],
-#mainContacto .mainContacto-top .form .contact-form input[type=email],
-#mainContacto .mainContacto-top .form .contact-form input[type=tel],
-#mainContacto .mainContacto-top .form .contact-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-#mainContacto .mainContacto-top .form .contact-form input[type=submit] {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  background-color: #d9bc86;
-  color: white;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-#mainContacto .mainContacto-top .form .contact-form input[type=submit]:hover {
-  background-color: #45a049;
-}
-#mainContacto .mainContacto-top .formImg {
-  background-image: url("../image/Sillas+logo.png");
-  width: 100%;
-  height: auto;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: auto;
-  flex: 1;
 }
 #mainContacto .mainContacto-bot {
   position: relative;
@@ -554,10 +520,11 @@ END -- MAIN STYLES
   font-family: "Roboto", sans-serif;
   align-content: center;
   text-align: center;
-  padding-top: 70px;
+  padding-top: 160px;
 }
 #mainContacto .mainContacto-bot .location-section iframe {
   position: absolute;
+  padding-top: 80px;
   top: 150px;
   left: 0;
   width: 100%;
@@ -577,6 +544,61 @@ END -- MAIN STYLES
   left: 0;
   width: 100%;
   max-height: 100px;
+}
+#mainContacto .mainContacto-bot .wave3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 100px;
+}
+
+.container3 {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+  padding: 20px;
+}
+.container3:hover {
+  box-shadow: 20px 30px 40px rgba(0, 0, 0, 0.7254901961);
+  transition: 0.5s;
+}
+.container3 h1 {
+  padding-top: 20px;
+}
+.container3 h2 {
+  padding-top: 40px;
+}
+.container3 h3 {
+  padding-top: 40px;
+}
+.container3 .button {
+  margin-top: 30px;
+}
+.container3 .button a {
+  color: white;
+}
+.container3 .button:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.7254901961);
+  transition: 0.5s;
+}
+
+button {
+  border-radius: 20px;
+  border: 1px solid #d9bc86;
+  background-color: #d9bc86;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
 }
 
 /*# sourceMappingURL=styles.css.map */

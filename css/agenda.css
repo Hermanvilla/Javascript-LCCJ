@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
+
+#body{
+  height: auto;
+}
+#main {
+  min-height: 100vh; 
+}
+.espacioCards{
+  margin: 0 auto;
+  
+}
+
+.wrapper {
+  padding: 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-style: bold;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 100px;
+}
+
+
+h2 {
+  margin: 15px 0;
+  margin-left: 3px;
+}
+
+ul {
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+form {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1.4px solid rgb(68, 134, 209);
+  border-radius: 5px;
+}
+
+form input {
+  padding: 3px;
+  font-size: 1.025rem;
+}
+
+.contenedor {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  
+}
+
+button {
+	border-radius: 20px;
+	border: 1px solid #d9bc86;
+	background-color: #d9bc86;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+.btn-search,
+.btn-success,
+.btn-delete {
+    background-color: #d9bc86;
+    border: 1px solid #d9bc86;
+    width: 130px;
+}
+
+.btn-delete {
+  background-color: rgb(215, 63, 24);
+  color: white;
+}
+
+.btn-login {
+  width: 100%;
+  height: 35px;
+  background-color: rgb(68, 134, 209);
+  color: white;
+}
+
+.box {
+  background-color: #eaff6a;
+  padding: 40px;
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 3px 1px 20px -2px rgba(0, 0, 0, 0.44);
+  -webkit-box-shadow: 3px 1px 20px -2px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: 3px 1px 20px -2px rgba(0, 0, 0, 0.44);
+}
+
+.caja {
+    width: 550px;
+    height: 368px;
+    background-color: yellow;
+    background-size: cover;
+    border: 15px rgb(253, 233, 12) solid;
+    padding: 50px;
+    margin: 100px;
+}
+
+.card {
+  width: 300px;
+  height: auto;
+    &:hover{
+        box-shadow: 10px 15px 20px #000000b9;
+        transition: 1s;
+        }
+    img{
+        width: 100%;
+        height: 80%;  
+        }
+                h1{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 40px;
+        text-align: center;
+    }   
+}
+
+.card h3 {
+  text-transform: capitalize;
+}
+
+.card-action {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.espacioCards{
+  height: auto;
+}
+
+.barraBusqueda{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
