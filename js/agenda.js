@@ -1,66 +1,133 @@
-const btnSearch = document.querySelector("#btnSearch"),
-btnClear = document.querySelector("#btnClear"),
-btnSelect = document.querySelector("#btnSelect"),
-btnAgenda = document.querySelector("#id"),
-inputIngreso = document.querySelector("#ingreso"),
-contenedor = document.querySelector("#contenedor");
-const inputUser = document.querySelector("#user");
+let productos = [];
 
-
-
-
-const servicios = [
-    { id: 1, nombre: "Herman Villalobos", especialidad: "civil", img: "Abogado1.jpg", link:"https://calendly.com/hjvillalobosl/30-minute-meeting-clone"},
-    { id: 2, nombre: "Marcos Linares", especialidad: "laboral", img: src="Abogado3.jpg", link:"https://calendly.com/hjvillalobosl/marcos-linares" },
-    { id: 3, nombre: "Marly Urdaneta", especialidad: "civil", img: "istockphoto-1393750072-612x612.jpg", link:"https://calendly.com/hjvillalobosl/marly-urdaneta" },
-    { id: 4, nombre: "Tomas Yepez", especialidad: "laboral", img: "istockphoto-1393750072-612x612.jpg", link:"https://calendly.com/hjvillalobosl/tomas-yepez" },
-    { id: 5, nombre: "Natalia Cuomo", especialidad: "civil", img: "Abogado2.jpg", link:"https://calendly.com/hjvillalobosl/natalia-cuomo" },
-    { id: 6, nombre: "Andrea Urdaneta", especialidad: "penal", img: "Abogado4.jpg", link:"https://calendly.com/hjvillalobosl/andrea-urdaneta" },
-    { id: 7, nombre: "Jose Jimenez", especialidad: "migratorio", img: "istockphoto-1393750072-612x612.jpg", link:"https://calendly.com/hjvillalobosl/jose-jimenez" },
-];
-
-// Función para crear estructura html de la carta
-function crearHtml(arr) {
-  contenedor.innerHTML = "";
-  let html;
-  for (const el of arr) {
-  html = `<div class="card">
-              <img src="../image/${el.img}" alt="${el.nombre}">
-              <hr>
-              <h3>${el.nombre}</h3>
-              <p>Especialidad: ${el.especialidad} </p>
-                  <div class="card-action">
-                  <a href="${el.link}" class="btn btn-success" target="_blank">Agendar</a>
-                  </div>
-          </div>`;
-  //Agrega al contenerdor la carta
-  contenedor.innerHTML = contenedor.innerHTML + html;
-}
+const getData = async (url) => {
+    const respuesta = await fetch (url);
+    const datos = await respuesta.json()
+    productos = datos;
+    cargarProductos(productos);
 }
 
-crearHtml(servicios);
+getData("../js/abogados.json")
 
-//Funciones de búsqueda
+const contenedorProductos = document.querySelector("#contenedor-productos");
+const btnTodos =document.querySelector("#btnTodos");
+const botonesCategorias = document.querySelectorAll(".boton-categoria");
+const tituloPrincipal = document.querySelector("#titulo-principal");
+let botonesAgregar = document.querySelectorAll(".producto-agregar");
+const numero = document.querySelector("#numero");
 
-function filtrarServicio(arr, filtro) {
-    const filtrado = arr.filter((el) => {
-    return el.especialidad.includes(filtro.toLowerCase());
-});
-    return filtrado;
+
+botonesCategorias.forEach(boton => boton.addEventListener("click", () => {
+    aside.classList.remove("aside-visible");
+}))
+
+
+function cargarProductos(productosElegidos) {
+
+    contenedorProductos.innerHTML = "";
+
+    productosElegidos.forEach(producto => {
+
+        const div = document.createElement("div");
+        div.classList.add("producto");
+        div.innerHTML = `
+            <img class="producto-imagen" src="${producto.imagen}" alt="${producto.nombre}">
+            <div class="producto-detalles">
+                <h3 class="producto-titulo text-center p-2">${producto.nombre.toUpperCase()}</h3>
+                <p class="producto-precio text-center mb-2">DERECHO ${producto.especialidad.toUpperCase()}</p>
+                <button class="producto-agregar" id="${producto.id}">Agendar</button>
+            </div>
+
+            
+        `;
+
+        contenedorProductos.append(div);
+    })
+
+    actualizarBotonesAgregar();
 }
 
 
-//Eventos Filtrado y clear
 
-btnSearch.addEventListener("click", () => {
-  const filtrado = filtrarServicio(servicios, inputIngreso.value);
-  crearHtml(filtrado);
+// Botonos para filtrado de especialidades
+
+
+botonesCategorias.forEach(boton => {
+    boton.addEventListener("click", (e) => {
+
+        botonesCategorias.forEach(boton => boton.classList.remove("active"));
+        e.currentTarget.classList.add("active");
+
+        const productosBoton = productos.filter(producto => producto.especialidad == e.currentTarget.id)
+        cargarProductos(productosBoton)
+    })
 });
 
 
-btnClear.addEventListener("click", () => {
-  crearHtml(servicios);
-});
+// Boton de todos
+
+btnTodos.addEventListener("click",() => {
+    cargarProductos(productos)
+})
 
 
+//Funcion para botones de agregado
 
+function actualizarBotonesAgregar() {
+    botonesAgregar = document.querySelectorAll(".producto-agregar");
+
+    botonesAgregar.forEach(boton => {
+        boton.addEventListener("click", agregarAlCarrito);
+    });
+}
+
+
+const productosEnCarrito = [];
+
+function agregarAlCarrito(e) {
+
+// Popup de mensaje de agregado 
+
+Toastify({
+    text: "Servicio agregado a tu agenda",
+    duration: 3000,
+    close: true,
+    gravity: "top", 
+    position: "center", 
+    stopOnFocus: true, 
+    style: {
+        background: "linear-gradient(to right, #4b33a8, #785ce9)",
+        borderRadius: "2rem",
+        textTransform: "uppercase",
+        fontSize: ".75rem"
+    },
+    offset: {
+        x: '1.5rem', 
+        y: '1.5rem' 
+    },
+
+    onClick: function(){} // Callback after click
+
+}).showToast();
+
+//  FIN DEL POPUP
+
+//Funcion de agregar al carrito
+
+
+    const idBoton = e.currentTarget.id;
+    const productoAgregado = productos.find(producto => producto.id === idBoton);
+    
+    productoAgregado.cantidad=1;
+    productosEnCarrito.push(productoAgregado);  
+    
+    actualizarNumero();
+
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+
+    }
+
+    function actualizarNumero() {
+        let nuevoNumero = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
+        numero.innerText = nuevoNumero;
+    }

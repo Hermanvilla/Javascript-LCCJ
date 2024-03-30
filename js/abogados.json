@@ -1,0 +1,86 @@
+[
+    { 
+    "id": "1", 
+    "nombre": "Herman Villalobos", 
+    "especialidad": "civil", 
+    "imagen": "../image/abogados/Abogado1.jpg", 
+    "link":"https://calendly.com/hjvillalobosl/30-minute-meeting-clone"
+    },
+
+    { 
+    "id": "2", 
+    "nombre": "Marcos Linares", 
+    "especialidad": "laboral", 
+    "imagen": "../image/abogados/Abogado3.jpg", 
+    "link":"https://calendly.com/hjvillalobosl/marcos-linares" },
+
+    { 
+    "id": "3", 
+    "nombre": "Marly Urdaneta", 
+    "especialidad": "civil", 
+    "imagen": "../image/abogados/default.jpg", 
+    "link":"https://calendly.com/hjvillalobosl/marly-urdaneta" },
+    
+    { 
+    "id": "4", 
+    "nombre": "Tomas Yepez", 
+    "especialidad": "laboral", 
+    "imagen": "../image/abogados/default.jpg", 
+    "link":"https://calendly.com/hjvillalobosl/tomas-yepez" },
+    
+    { 
+    "id": "5", 
+    "nombre": "Natalia Cuomo", 
+    "especialidad": "civil", 
+    "imagen": "../image/abogados/Abogado2.jpg", 
+    "link":"https://calendly.com/hjvillalobosl/natalia-cuomo" },
+    
+    { 
+    "id": "6", 
+    "nombre": "Andrea Urdaneta", 
+    "especialidad": "penal", 
+    "imagen": "../image/abogados/Abogado4.jpg", 
+    "link":"https://calendly.com/hjvillalobosl/andrea-urdaneta" },
+    
+    { 
+    "id": "7", 
+    "nombre": "Jose Jimenez", 
+    "especialidad": "migratorio", 
+    "imagen": "../image/abogados/default.jpg", 
+    "link":"https://calendly.com/hjvillalobosl/jose-jimenez" 
+    },
+
+    { 
+    "id": "8", 
+    "nombre": "Rosa Jimenez", 
+    "especialidad": "migratorio", 
+    "imagen": "../image/abogados/Abogado8.jpg", 
+    "link":"https://calendly.com/hjvillalobosl/jose-jimenez" 
+    },
+
+    { 
+    "id": "9", 
+    "nombre": "Laura Coronado", 
+    "especialidad": "penal", 
+    "imagen": "../image/abogados/Abogado9.jpg", 
+    "link":"https://calendly.com/hjvillalobosl/jose-jimenez" 
+    },
+
+    { 
+    "id": "10", 
+    "nombre": "Mauricio Cifuentes", 
+    "especialidad": "laboral", 
+    "imagen": "../image/abogados/Abogado5.jpg", 
+    "link":"https://calendly.com/hjvillalobosl/jose-jimenez" 
+    },
+
+    { 
+    "id": "11", 
+    "nombre": "Carlos Matos", 
+    "especialidad": "migratorio", 
+    "imagen": "../image/abogados/Abogado6.jpg", 
+    "link":"https://calendly.com/hjvillalobosl/jose-jimenez" 
+    }
+    
+
+]

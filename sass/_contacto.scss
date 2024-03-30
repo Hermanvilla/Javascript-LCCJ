@@ -5,17 +5,58 @@
     background: #200122;  /* fallback for old browsers */
         background: -webkit-linear-gradient(to right, #26060b, #d9bc86);  /* Chrome 10-25, Safari 5.1-6 */
         background: linear-gradient(to right, #26060b, #d9bc86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    .mainContacto-top{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        height: 100vh;
-        gap: 10px;
-        font-family: 'Montserrat', sans-serif;
-        align-items: center;
-        
-    }
+        color: #FFFFFF;
+        .mainContacto-top{
+            display: flex;
+            justify-content: space-between;
+            height: auto;
+            gap: 10px;
+            padding-bottom: 70px;
+            .form{
+                align-content: end;
+                flex: 1;
+                .contact-form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    max-width: 400px;
+                    margin: 50px auto;
+                }
+                .contact-form input[type="text"],
+                .contact-form input[type="email"],
+                .contact-form input[type="tel"],
+                .contact-form textarea {
+                    width: 100%;
+                    padding: 10px;
+                    margin: 5px 0;
+                    border: 1px solid #ccc;
+                    border-radius: 3px;
+                }
+                .contact-form input[type="submit"] {
+                    width: 100%;
+                    padding: 10px;
+                    margin: 5px 0;
+                    background-color: #d9bc86;
+                    color: white;
+                    border: none;
+                    border-radius: 3px;
+                    cursor: pointer;
+                }
+                .contact-form input[type="submit"]:hover {
+                    background-color: #45a049;
+                }
+            }
+            .formImg{
+                background-image: url("../image/Sillas+logo.png");
+                width: 100%;
+                height: auto;
+                background-attachment: fixed;
+                background-position: center;
+                background-size:auto;
+                flex: 1;
+            
+            }
+        }
     .mainContacto-bot{
         position: relative;
         height: 100vh;

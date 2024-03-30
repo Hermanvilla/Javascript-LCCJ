@@ -8,11 +8,17 @@ function inicioSesion(usuarios) {
         return usuario.email == userInput.value && usuario.password == passInput.value;
     });
 
-    if(userFound){
-        /*document.querySelector("#mensajeLog").innerHTML="Usuario encontrado"*/
-        location.href='../pages/agenda.html'
-    }else{  
-        document.querySelector("#mensajeLog").innerHTML="Usuario no encontrado"
+    if (userFound) {
+        if (userFound.password === passInput.value) {
+            // Contraseña correcta, redirigir al usuario a la página de la agenda
+            location.href = '../pages/agenda.html';
+        } else {
+            // Contraseña incorrecta
+            document.querySelector("#mensajeLog").innerHTML = "Contraseña incorrecta";
+        }
+    } else {  
+        // Usuario no encontrado
+        document.querySelector("#mensajeLog").innerHTML = "Usuario no encontrado";
     }
 }
 
