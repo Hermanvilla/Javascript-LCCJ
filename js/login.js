@@ -23,18 +23,7 @@ function inicioSesion(usuarios) {
 }
 
 function recuperarLS() {
-    let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-
-    // Agregamos el usuario admin por defecto si no hay usuarios en el almacenamiento local
-    if (usuarios.length === 0) {
-        usuarios.push({
-            email: "admin@mail.com",
-            password: "admin"
-        });
-        localStorage.setItem("usuarios", JSON.stringify(usuarios));
-    }
-
-    return usuarios;
+    return JSON.parse(localStorage.getItem("usuarios"));
 }
 
 const usuariosLS = recuperarLS();

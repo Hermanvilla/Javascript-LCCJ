@@ -15,6 +15,11 @@ class Usuario {
         this.email = email;
         this.password = password;
     }
+
+    adminDefault() {
+        return new Usuario("Admin", "admin@mail.com", "admin");
+    }
+
 }
 
 //Guardar en LS
